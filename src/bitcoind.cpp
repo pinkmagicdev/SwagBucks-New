@@ -50,7 +50,7 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("BlackCoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("SwagBucks version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  blackcoind [options]                     " + "\n" +
                   "  blackcoind [options] <command> [params]  " + _("Send command to -server or blackcoind") + "\n" +

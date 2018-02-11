@@ -204,10 +204,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "Stop BlackCoin server.");
+            "Stop SwagBucks server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "BlackCoin server stopping";
+    return "SwagBucks server stopping";
 }
 
 
@@ -509,7 +509,7 @@ void StartRPCThreads()
               "The username and password MUST NOT be the same.\n"
               "If the file does not exist, create it with owner-readable-only file permissions.\n"
               "It is also recommended to set alertnotify so you are notified of problems;\n"
-              "for example: alertnotify=echo %%s | mail -s \"BlackCoin Alert\" admin@foo.com\n"),
+              "for example: alertnotify=echo %%s | mail -s \"SwagBucks Alert\" admin@foo.com\n"),
                 strWhatAmI,
                 GetConfigFile().string(),
                 EncodeBase58(&rand_pwd[0],&rand_pwd[0]+32)),
